@@ -24,7 +24,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+  origin: "https://litenotes-three.vercel.app/"
+}));
 app.use(express.json());
 
 const userRoutes = require('./src/routers/user');
