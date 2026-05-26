@@ -25,7 +25,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: "https://litenotes-three.vercel.app/"
+  origin: "https://litenotes-three.vercel.app"
 }));
 app.use(express.json());
 
